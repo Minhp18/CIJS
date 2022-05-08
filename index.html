@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body >
+    <h1>COLOR PICKER</h1>
+    <div class="container" id="container">
+        <div class="content12">
+            <div id="box-hex"></div>
+            <div id="text-hex">Hex code</div>
+            <button class="btn" onclick="generateHex()">Generate</button>
+        </div>
+        <div class="content34">
+            <div class="firstColor">
+                <div id="hex1">Hex1</div>
+                <input type="color" id="color1">
+                <br>
+                <div class="pickPercent">Chọn phần trăm <input type="number" id="percent1"></div>
+                
+            </div>
+            <div class="secondColor">
+                <div id="hex2">Hex2</div>
+                <input type="color" id="color2">
+                <br>
+                <div class="pickPercent">Chọn phần trăm <input type="number" id="percent2"></div>
+            </div>
+            
+            
+            <div>Chọn hướng đổ màu
+                <select name="selection" id="selection">
+                    <option value="to bottom">To Bottom</option>
+                    <option value="to top">To Top</option>
+                    <option value="to right">To Right</option>
+                    <option value="to left">To Left</option>
+                    <option value="to bottom right">To Bottom Right</option>
+                    <option value="to bottom left">To Bottom Left</option>
+                    <option value="to top right">To Top Right</option>
+                    <option value="to top left">To Top Left</option>
+                </select>
+            </div>
+            <button class="btn" onclick="changeBC()">Change Background Color</button>
+            
+        </div>
+    </div>
+    <script src="main.js"></script>
+    
+</body>
+</html>
